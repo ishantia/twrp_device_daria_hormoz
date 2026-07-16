@@ -3,7 +3,7 @@
 DEVICE_PATH := device/daria/hormoz
 
 # Maintainer/Version
-TW_DEVICE_VERSION := ZeusV20
+TW_DEVICE_VERSION := Zeus_V20
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
