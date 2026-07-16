@@ -1,0 +1,7 @@
+# Ignore temporary and backup files
+*~
+*.swp
+
+# Ignore compiled binaries or recovery image outputs if generated inside here
+*.img
+*.bin
