@@ -3,7 +3,6 @@
 DEVICE_PATH := device/daria/hormoz
 
 # Maintainer/Version
-TW_DEVICE_VERSION := Zeus_V20
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -215,3 +214,10 @@ TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 
 TW_INCLUDE_FASTBOOTD := true
 USE_AB := true
+
+# Custom branding
+
+# Custom branding
+
+# Custom branding
+TW_DEVICE_VERSION := "hormoz-v1-ishantia"
