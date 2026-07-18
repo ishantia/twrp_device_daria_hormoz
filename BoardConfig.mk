@@ -220,4 +220,5 @@ USE_AB := true
 # Custom branding
 
 # Custom branding
-TW_DEVICE_VERSION := "hormoz-v1-ishantia"
+TW_DEVICE_VERSION := hormoz-v1-ishantia
+TW_HAS_NO_RECOVERY_PARTITION := true
