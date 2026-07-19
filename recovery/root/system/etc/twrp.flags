@@ -1,17 +1,10 @@
 /system                   erofs     system                                                 flags=display=system;logical;slotselect;backup=1;flashimg=1
-/system                   ext4      system                                                 flags=display=system;logical;slotselect;backup=1;flashimg=1
 /system_ext               erofs     system_ext                                             flags=display=system_ext;logical;slotselect;backup=1;flashimg=1
-/system_ext               ext4      system_ext                                             flags=display=system_ext;logical;slotselect;backup=1;flashimg=1
 /vendor                   erofs     vendor                                                 flags=display=vendor;logical;slotselect;backup=1;flashimg=1
-/vendor                   ext4      vendor                                                 flags=display=vendor;logical;slotselect;backup=1;flashimg=1
 /product                  erofs     product                                                flags=display=product;logical;slotselect;backup=1;flashimg=1
-/product                  ext4      product                                                flags=display=product;logical;slotselect;backup=1;flashimg=1
 /vendor_dlkm              erofs     vendor_dlkm                                            flags=display=vendor_dlkm;logical;slotselect;backup=1;flashimg=1
-/vendor_dlkm              ext4      vendor_dlkm                                            flags=display=vendor_dlkm;logical;slotselect;backup=1;flashimg=1
 /odm_dlkm                 erofs     odm_dlkm                                               flags=display=odm_dlkm;logical;slotselect;backup=1;flashimg=1
-/odm_dlkm                 ext4      odm_dlkm                                               flags=display=odm_dlkm;logical;slotselect;backup=1;flashimg=1
 /system_dlkm              erofs     system_dlkm                                            flags=display=system_dlkm;logical;slotselect;backup=1;flashimg=1
-/system_dlkm              ext4      system_dlkm                                            flags=display=system_dlkm;logical;slotselect;backup=1;flashimg=1
 /metadata                 f2fs      /dev/block/by-name/metadata                            flags=display=metadata;backup=1;flashimg=1
 /data                     f2fs      /dev/block/by-name/userdata                            flags=display=data;backup=1;flashimg=1
 /mnt/vendor/protect_f     ext4      /dev/block/by-name/protect1                            flags=display=protect_f;backup=1;flashimg=1
@@ -86,12 +79,4 @@ auto                      auto      /devices/platform/soc/11201000.usb0/11200000
 /usbotg     auto        /dev/block/mmcblk1p2  /dev/block/mmcblk1p2     flags=display="USB-OTG 8";backup=0;storage;wipeingui;removable;fsflags="utf8"
 /usb_otg    auto        /dev/block/sdd1                       flags=display="USB-OTG 9";backup=0;storage;wipeingui;removable;fsflags="utf8"
 
-#DYNAMIC
-/system            emmc     /dev/block/mapper/system                   flags=display=system;slotselect;backup=1;flashimg=1
-/system_ext            emmc     /dev/block/mapper/system_ext                   flags=display=system_ext;slotselect;backup=1;flashimg=1
-/vendor            emmc     /dev/block/mapper/vendor                   flags=display=vendor;slotselect;backup=1;flashimg=1
-/product            emmc     /dev/block/mapper/product                   flags=display=product;slotselect;backup=1;flashimg=1
-/vendor_dlkm            emmc     /dev/block/mapper/vendor_dlkm                   flags=display=vendor_dlkm;slotselect;backup=1;flashimg=1
-/odm_dlkm            emmc     /dev/block/mapper/odm_dlkm                   flags=display=odm_dlkm;slotselect;backup=1;flashimg=1
-/system_dlkm            emmc     /dev/block/mapper/system_dlkm                   flags=display=system_dlkm;slotselect;backup=1;flashimg=1
 # Online TWRP Builder By Team Hovatek
