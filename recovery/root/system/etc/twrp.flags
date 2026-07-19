@@ -80,3 +80,12 @@ auto                      auto      /devices/platform/soc/11201000.usb0/11200000
 /usb_otg    auto        /dev/block/sdd1                       flags=display="USB-OTG 9";backup=0;storage;wipeingui;removable;fsflags="utf8"
 
 # Online TWRP Builder By Team Hovatek
+
+#DYNAMIC
+/system emmc /dev/block/mapper/system flags=display=system;slotselect;backup=1;flashimg=1
+/system_ext emmc /dev/block/mapper/system_ext flags=display=system_ext;slotselect;backup=1;flashimg=1
+/vendor emmc /dev/block/mapper/vendor flags=display=vendor;slotselect;backup=1;flashimg=1
+/product emmc /dev/block/mapper/product flags=display=product;slotselect;backup=1;flashimg=1
+/vendor_dlkm emmc /dev/block/mapper/vendor_dlkm flags=display=vendor_dlkm;slotselect;backup=1;flashimg=1
+/odm_dlkm emmc /dev/block/mapper/odm_dlkm flags=display=odm_dlkm;slotselect;backup=1;flashimg=1
+/system_dlkm emmc /dev/block/mapper/system_dlkm flags=display=system_dlkm;slotselect;backup=1;flashimg=1
