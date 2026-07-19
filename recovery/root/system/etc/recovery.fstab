@@ -1,6 +1,12 @@
 # Android 15 - Daria Bond 2 (hormoz) - MT6897
 # Simplified for TWRP
 
+system /system erofs ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+system_ext /system_ext erofs ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+vendor /vendor erofs ro wait,slotselect,avb,logical,first_stage_mount
+product /product erofs ro wait,slotselect,avb,logical,first_stage_mount
+vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
+odm_dlkm /odm_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
 system_dlkm /system_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
 
 /dev/block/by-name/metadata /metadata f2fs noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
